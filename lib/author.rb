@@ -8,7 +8,7 @@ class Author
   end
  
   def add_post(post)
-    @post << posts
+    @posts << posts
     post.author = self
     @@post_count +=1
   end
@@ -18,9 +18,9 @@ class Author
   end
 
   def add_post_by_title(title)
-    post = Post.new(title)
-    self.post << post
-    post.author = self
+    posts = Post.new(title)
+    self.posts << posts
+    posts.author = self
     @@post_count +=1
   end
   
