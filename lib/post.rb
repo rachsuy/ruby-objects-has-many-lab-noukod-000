@@ -6,7 +6,7 @@ class Post
     @title = title
     @author = author
   
-    @@all << author
+    @@all << self
   
   end
   
